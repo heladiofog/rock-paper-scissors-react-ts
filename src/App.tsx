@@ -1,11 +1,18 @@
-import './App.css'
+import styles from './App.module.css';
+// import './App.css'
 
 function App() {
 
   return (
-    <>
-    <h1>Hallo Welt Vite + React + TS!</h1>
-    </>
+    <div className={styles.container}>
+      <header className={styles.titleContainer}>
+        <h1>Rock, Paper, Scissors</h1>
+        <p>React TS game by @tezcasoft!</p>
+      </header>
+      <main>
+        {/* main components for the game */}
+      </main>
+    </div>
   )
 }
 
