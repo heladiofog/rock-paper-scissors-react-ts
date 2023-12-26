@@ -1,4 +1,7 @@
 import styles from './App.module.css';
+import ScoreBoard from './sections/ScoreBoard';
+import GameControls from './sections/GameControlsSection';
+
 // import './App.css'
 
 function App() {
@@ -11,9 +14,11 @@ function App() {
       </header>
       <main>
         {/* main components for the game */}
+        <ScoreBoard />
+        <GameControls />
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

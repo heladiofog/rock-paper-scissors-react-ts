@@ -1,0 +1,45 @@
+.scoreContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreContainer h3 {
+  margin-top: 0;
+  padding: 20px 0;
+  background-color: #181848;
+  color: aliceblue;
+}
+
+.score {
+  background-color: aliceblue;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* results section */
+.resultsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 200px;
+}
+
+.playerHand,
+.computerHand {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.informationColumn {
+  color: #181848;
+  background-color: azure;
+  max-width: 400px;
+}
