@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
 import { HandOption, IOptions, IOptionsContext, Props } from "./optionsContextTypes";
 import { FaRegHandPaper, FaRegHandRock, FaRegHandScissors } from "react-icons/fa";
+import { initialState } from "./initialContextValues";
 
 const options: IOptions[] = [
   { name: HandOption.rock, icon: <FaRegHandRock size={60} /> },
@@ -10,6 +11,7 @@ const options: IOptions[] = [
 
 const OptionsContext = createContext<IOptionsContext>({
   options: [],
+  state: initialState,
 });
 
 export function OptionsProvider(props: Props) {
