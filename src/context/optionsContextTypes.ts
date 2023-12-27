@@ -1,3 +1,5 @@
+import { ActionTypes } from "../reducers/scoreReducerTypes";
+
 export enum HandOption {
   rock = 'rock',
   paper = 'paper',
@@ -12,6 +14,7 @@ export interface IOptions {
 export interface IOptionsContext {
   options: IOptions[];
   state: IInitialState;
+  dispatch: React.Dispatch<ActionTypes>;
 }
 
 export interface Props {
