@@ -6,10 +6,10 @@
   border: none;
 }
 
-.activeChoice {
-  background-color: goldenrod;
+.choiceButton:focus {
+  outline: none;
 }
 
-.activeChoice:focus {
-  outline: none;
+.activeChoice {
+  background-color: goldenrod;
 }

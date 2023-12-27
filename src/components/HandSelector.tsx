@@ -14,7 +14,7 @@ const HandSelector: React.FC<Props> = ({ name, icon, handChoiceIndex }) => {
   const optionsContext = useOptions();
 
   const { dispatch, state } = optionsContext;
-  const selectedHandIndex = state.playerHand; // previous selected option
+  const selectedHandIndex = state.playerHand; // current selected option
 
   const selectOption = (selectedOption: number) => {
     dispatch({
@@ -25,7 +25,7 @@ const HandSelector: React.FC<Props> = ({ name, icon, handChoiceIndex }) => {
     // console.log(`The selected option's index is: ${selectedOption}`);
   };
 
-  console.log({state});
+  // console.log({state});
   return (
     <>
       <button
