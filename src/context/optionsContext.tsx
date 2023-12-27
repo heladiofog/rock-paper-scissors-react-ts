@@ -34,7 +34,7 @@ export function OptionsProvider(props: Props) {
 }
 
 // Custom hook to retrieve the context
-export function useOptions() {
+export function useOptions(): IOptionsContext {
   const context = useContext(OptionsContext);
   return context;
 }
