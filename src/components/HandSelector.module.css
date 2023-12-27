@@ -5,3 +5,11 @@
   align-items: center;
   border: none;
 }
+
+.activeChoice {
+  background-color: goldenrod;
+}
+
+.activeChoice:focus {
+  outline: none;
+}
